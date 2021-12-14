@@ -6,7 +6,6 @@ import java.io.IOException;
 public class Launcher {
     public static void main(String[] args) throws IOException {
         int port;
-
         try {
             port = Integer.parseInt(args[0]);
         }
@@ -16,7 +15,6 @@ public class Launcher {
         }
 
         System.out.println("Starting the server!");
-
         HttpDaemon server = new HttpDaemon(port);
     }
 }
