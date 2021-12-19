@@ -1,5 +1,5 @@
 package fr.lernejo.navy_battle.tools;
-import ...
+import ....
 
 public class HttpRequest {
 	public Map<String, String> queryToMap(String query) {
