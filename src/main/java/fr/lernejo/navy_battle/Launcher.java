@@ -10,11 +10,11 @@ public class Launcher {
             port = Integer.parseInt(args[0]);
         }
         catch (NumberFormatException e) {
-            System.out.println("Invalid port format");
+            System.out.println("Invalid format for port given");
             return;
         }
 
-        System.out.println("Starting the server!");
+        System.out.println("Starting the server now!");
         HttpDaemon server = new HttpDaemon(port);
     }
 }

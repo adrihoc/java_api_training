@@ -9,10 +9,13 @@ import java.io.OutputStream;            //i         .//
 public class CallHandler implements HttpHandler {
     @Override
     public void handle(HttpExchange exchange) throws IOException {
-        String requestMethod = exchange.getRequestMethod();
+
+        String response = "G'day all...'";
         String query = exchange.getRequestURI().getQuery();
-        String response = "G'day";
+        String requestMethod = exchange.getRequestMethod();
+
         exchange.sendResponseHeaders(100, response.length());
+
         try (OutputStream os = exchange.getResponseBody()) {
             os.write(response.getBytes());
         }
