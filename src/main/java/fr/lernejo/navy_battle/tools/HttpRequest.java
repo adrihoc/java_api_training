@@ -1,5 +1,4 @@
 package fr.lernejo.navy_battle.tools;
-//import ...
 
 import java.util.HashMap;
 import java.util.Map;
