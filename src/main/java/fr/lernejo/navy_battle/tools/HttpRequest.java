@@ -1,5 +1,8 @@
 package fr.lernejo.navy_battle.tools;
+//import ...
 
+import java.util.HashMap;
+import java.util.Map;
 
 public class HttpRequest {
 	public Map<String, String> queryToMap(String query) {
